@@ -1,0 +1,11 @@
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Application\bin\Debug\net8.0\Maraudr.Stock.Application.deps.json
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Application\bin\Debug\net8.0\Maraudr.Stock.Application.dll
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Application\bin\Debug\net8.0\Maraudr.Stock.Application.pdb
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Application\obj\Debug\net8.0\Maraudr.Stock.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Application\obj\Debug\net8.0\Maraudr.Stock.Application.AssemblyInfoInputs.cache
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Application\obj\Debug\net8.0\Maraudr.Stock.Application.AssemblyInfo.cs
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Application\obj\Debug\net8.0\Maraudr.Stock.Application.csproj.CoreCompileInputs.cache
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Application\obj\Debug\net8.0\Maraudr.Stock.Application.dll
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Application\obj\Debug\net8.0\refint\Maraudr.Stock.Application.dll
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Application\obj\Debug\net8.0\Maraudr.Stock.Application.pdb
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Application\obj\Debug\net8.0\ref\Maraudr.Stock.Application.dll
