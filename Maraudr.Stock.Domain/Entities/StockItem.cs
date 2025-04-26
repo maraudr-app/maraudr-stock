@@ -1,25 +1,21 @@
-﻿using Maraudr.Stock.Domain.Enums;
-using Maraudr.Stock.Domain.Exceptions;
-using Maraudr.Stock.Domain.Interfaces;
-
-namespace Maraudr.Stock.Domain.Entities
+﻿namespace Maraudr.Stock.Domain.Entities
 {
-    public class StockItem(string name) : IRessource
+    public class StockItem : IResource
     {
-        public Guid Guid { get; init; } = Guid.NewGuid();
-        public string Name { get; } = name ?? throw new InvalidItemNameException("Item name is null");
-        public string? Description { get; private set; }
-        public ItemType ItemType { get; private set; }
+        public Guid Id { get; init; }
+        public string Name { get; init; } = null!;
+        public string? Description { get; init; }
+        public Category Category { get; init; }
+        public DateTime EntryDate { get; init; } = DateTime.Now;
 
+        public StockItem() { }
 
-        public void SetItemDescription(string description)
+        public StockItem(string name, string description = null!, Category type = Category.Unknown)
         {
+            Id = Guid.NewGuid();
+            Name = name ?? throw new InvalidItemNameException("Item name is null");
             Description = description;
-        }
-
-        public void SetItemType(ItemType itemType) 
-        { 
-            ItemType = itemType;
+            Category = type;
         }
     }
 }

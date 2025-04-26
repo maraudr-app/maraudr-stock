@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "e3NMYhB2XlgCb9t1T7gKnzkTwnhkkPo5cf/CFEd/5U0=",
+  "Hash": "JWfjNBUDYp4bmzRfzmkR4bV2kjhifCfwdufuQ6Li83w=",
   "Source": "Maraudr.Stock.Endpoints",
   "BasePath": "_content/Maraudr.Stock.Endpoints",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }

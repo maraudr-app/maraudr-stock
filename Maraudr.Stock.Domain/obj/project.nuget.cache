@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "2UzcSCnNqW0=",
+  "dgSpecHash": "NUlB89Lb86Y=",
   "success": true,
-  "projectFilePath": "C:\\Users\\HCACHON\\source\\repos\\Maraudr.Stock\\Maraudr.Stock.Domain\\Maraudr.Stock.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\hugo\\Desktop\\Maraudr.Stock\\Maraudr.Stock\\Maraudr.Stock.Domain\\Maraudr.Stock.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hugo\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.4\\microsoft.extensions.dependencyinjection.9.0.4.nupkg.sha512",
+    "C:\\Users\\hugo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.4\\microsoft.extensions.dependencyinjection.abstractions.9.0.4.nupkg.sha512"
+  ],
   "logs": []
 }

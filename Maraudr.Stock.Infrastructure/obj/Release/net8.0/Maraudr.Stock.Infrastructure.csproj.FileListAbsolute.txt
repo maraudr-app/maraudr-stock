@@ -1,0 +1,16 @@
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Infrastructure\bin\Release\net8.0\Maraudr.Stock.Infrastructure.deps.json
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Infrastructure\bin\Release\net8.0\Maraudr.Stock.Infrastructure.dll
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Infrastructure\bin\Release\net8.0\Maraudr.Stock.Infrastructure.pdb
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Infrastructure\bin\Release\net8.0\Maraudr.Stock.Domain.dll
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Infrastructure\bin\Release\net8.0\Maraudr.Stock.Domain.pdb
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Infrastructure\obj\Release\net8.0\Maraudr.Stock.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Infrastructure\obj\Release\net8.0\Maraudr.Stock.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Infrastructure\obj\Release\net8.0\Maraudr.Stock.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Infrastructure\obj\Release\net8.0\Maraudr.Stock.Infrastructure.AssemblyInfo.cs
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Infrastructure\obj\Release\net8.0\Maraudr.Stock.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Infrastructure\obj\Release\net8.0\Maraudr.Stock.Infrastructure.sourcelink.json
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Infrastructure\obj\Release\net8.0\Maraudr..BA003F1A.Up2Date
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Infrastructure\obj\Release\net8.0\Maraudr.Stock.Infrastructure.dll
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Infrastructure\obj\Release\net8.0\refint\Maraudr.Stock.Infrastructure.dll
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Infrastructure\obj\Release\net8.0\Maraudr.Stock.Infrastructure.pdb
+C:\Users\HCACHON\source\repos\Maraudr.Stock\Maraudr.Stock.Infrastructure\obj\Release\net8.0\ref\Maraudr.Stock.Infrastructure.dll

@@ -1,33 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HCACHON\\source\\repos\\Maraudr.Stock\\Maraudr.Stock.Infrastructure\\Maraudr.Stock.Infrastructure.csproj": {}
+    "C:\\Users\\hugo\\Desktop\\Maraudr.Stock\\Maraudr.Stock\\Maraudr.Stock.Infrastructure\\Maraudr.Stock.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HCACHON\\source\\repos\\Maraudr.Stock\\Maraudr.Stock.Infrastructure\\Maraudr.Stock.Infrastructure.csproj": {
+    "C:\\Users\\hugo\\Desktop\\Maraudr.Stock\\Maraudr.Stock\\Maraudr.Stock.Domain\\Maraudr.Stock.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HCACHON\\source\\repos\\Maraudr.Stock\\Maraudr.Stock.Infrastructure\\Maraudr.Stock.Infrastructure.csproj",
-        "projectName": "Maraudr.Stock.Infrastructure",
-        "projectPath": "C:\\Users\\HCACHON\\source\\repos\\Maraudr.Stock\\Maraudr.Stock.Infrastructure\\Maraudr.Stock.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\HCACHON\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HCACHON\\source\\repos\\Maraudr.Stock\\Maraudr.Stock.Infrastructure\\obj\\",
+        "projectUniqueName": "C:\\Users\\hugo\\Desktop\\Maraudr.Stock\\Maraudr.Stock\\Maraudr.Stock.Domain\\Maraudr.Stock.Domain.csproj",
+        "projectName": "Maraudr.Stock.Domain",
+        "projectPath": "C:\\Users\\hugo\\Desktop\\Maraudr.Stock\\Maraudr.Stock\\Maraudr.Stock.Domain\\Maraudr.Stock.Domain.csproj",
+        "packagesPath": "C:\\Users\\hugo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hugo\\Desktop\\Maraudr.Stock\\Maraudr.Stock\\Maraudr.Stock.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\HCACHON\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\hugo\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://sbds/BdsPackage/nuget": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -43,13 +36,18 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -66,7 +64,83 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\hugo\\Desktop\\Maraudr.Stock\\Maraudr.Stock\\Maraudr.Stock.Infrastructure\\Maraudr.Stock.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hugo\\Desktop\\Maraudr.Stock\\Maraudr.Stock\\Maraudr.Stock.Infrastructure\\Maraudr.Stock.Infrastructure.csproj",
+        "projectName": "Maraudr.Stock.Infrastructure",
+        "projectPath": "C:\\Users\\hugo\\Desktop\\Maraudr.Stock\\Maraudr.Stock\\Maraudr.Stock.Infrastructure\\Maraudr.Stock.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\hugo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hugo\\Desktop\\Maraudr.Stock\\Maraudr.Stock\\Maraudr.Stock.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\hugo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\hugo\\Desktop\\Maraudr.Stock\\Maraudr.Stock\\Maraudr.Stock.Domain\\Maraudr.Stock.Domain.csproj": {
+                "projectPath": "C:\\Users\\hugo\\Desktop\\Maraudr.Stock\\Maraudr.Stock\\Maraudr.Stock.Domain\\Maraudr.Stock.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

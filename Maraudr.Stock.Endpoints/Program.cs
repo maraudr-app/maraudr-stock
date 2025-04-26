@@ -1,42 +1,87 @@
+using Maraudr.Stock.Endpoints;
+using Microsoft.AspNetCore.Mvc;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddInfrastructure();
+builder.Services.AddApplication();
+builder.Services.AddValidation();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-var summaries = new[]
+app.MapGet("/stock/{id}", async (Guid id, IQueryItemHandler handler) =>
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+    var item = await handler.HandleAsync(id);
+    return item is not null ? Results.Ok(item) : Results.NotFound();
+});
 
-app.MapGet("/weatherforecast", () =>
+app.MapGet("/stock/type/{type}", async (Category type, IQueryItemByType handler) =>
 {
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast")
-.WithOpenApi();
+    var item = await handler.HandleAsync(type);
+    return Results.Ok(item);
+});
+
+app.MapPost("/stock/", async (
+    CreateItemCommand item, 
+    ICreateItemHandler handler, 
+    IValidator<CreateItemCommand> validator) =>
+{
+    var result = validator.Validate(item);
+
+    if (!result.IsValid)
+    {
+        var messages = result.Errors
+            .ToDictionary(e => e.PropertyName, e => e.ErrorMessage);
+
+        return Results.BadRequest(messages);
+    }
+    
+    var id = await handler.HandleAsync(item);
+    
+    return Results.Created($"/stock/{id}", new { id });
+});
+
+app.MapPost("/stock/bulk", async (
+    CreateItemCommand item, 
+    [FromQuery] int quantity, 
+    ICreateMultipleItemsHandler handler, 
+    IValidator<CreateItemCommand> validator) =>
+{
+    var result = validator.Validate(item);
+
+    if (!result.IsValid)
+    {
+        var errors = result.Errors
+            .ToDictionary(e => e.PropertyName, e => e.ErrorMessage);
+        return Results.BadRequest(errors);
+    }
+
+    if (quantity <= 0)
+    {
+        return Results.BadRequest(new { Error = "Quantity must be greater than 0." });
+    }
+
+    var commands = Enumerable.Range(0, quantity)
+        .Select(_ => new CreateItemCommand(item.Name, item.Description, item.ItemType))
+        .ToList();
+
+    var items = await handler.HandleAsync(commands);
+
+    return Results.Created("/stock", new { items });
+});
+
+app.MapDelete("/stock/{id}", async (Guid id, IDeleteItemHandler handler) =>
+{
+    await handler.HandleAsync(id);
+    return Results.Ok();
+});
 
 app.Run();
-
-internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
